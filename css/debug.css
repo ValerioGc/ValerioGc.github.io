@@ -1,0 +1,21 @@
+/* Classi debug */
+.debug #container-app,
+.debug aside,
+.debug #user,
+.debug header,
+.debug footer {
+    border: 1px solid var(--primary-color);
+}
+.debug #container-app {
+    background-color: red;
+}
+.debug aside {
+    background-color: #778899;
+}
+.debug header,
+.debug footer {
+    background-color: #00ffff;
+}
+.debug #notification-alert-section {
+    background-color: #00ff88;
+}
