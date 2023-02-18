@@ -1,0 +1,92 @@
+/* LG > 912px */
+@media screen and (max-width: 912px) {
+    aside .contact-info p {
+        display: none;
+    }
+    aside .contact-info h4 {
+        line-height: 45px;
+        padding: 0 5px;
+    }
+    .fa-magnifying-glass {
+        display: none !important;
+    }
+    #search-bar  {
+        margin: auto;
+    }
+    #notification-alert-section span {
+        padding: 0;
+    }
+    #message-app-chat {
+        padding: 10px 50px;
+    }
+    #app-header p {
+        font-size: 0.7rem;
+    }
+}
+/* MQ Tablet > 768px */
+@media screen and (max-width: 768px) {
+    #app-header p {
+        font-size: 0.8rem;
+    }
+    #app-header p,
+    #user i,
+    #notification-alert-section h5 {
+        display: none;
+    }
+    /* Aside */
+    #notification-alert-section {
+        text-align: center;
+    }
+    #notification-alert-section span {
+        padding-left: 20px;
+        transform: scale(1);
+    }
+    /* Chat */
+    #message-app header {
+        padding-left: 15px;
+    }
+    #message-app-chat {
+        padding: 10px 30px;
+    }
+}
+/* MQ Mobile > 578px */
+@media screen and (max-width: 578px) {
+
+    /* Aside */
+    #app-footer > * {
+        transform: scaleY(0.8);
+    }
+    /* Aside */
+    .contact {
+        padding: 10px 8px;
+    }
+    .selected-contact img {
+        width: 35px;
+        height: 35px;
+    }
+    aside .contact-info p {
+        display: block;
+        padding: 0 5px;
+    }
+    #user i {
+        display: inline-block;
+        padding: 5px;
+    }
+    aside .contact-info h4 {
+        font-size: 1rem;
+    }
+    aside,
+    #message-app {
+        width: 100%;
+    }
+    /* Chat */
+    #app-header img {
+        vertical-align: middle;
+    }
+    /* #message-app {
+        display: none;
+    }  */
+    #message-app header i {
+        display: inline-block;
+    }
+}
