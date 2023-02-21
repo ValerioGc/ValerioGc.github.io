@@ -1,0 +1,61 @@
+{
+    "projects":[
+        {
+            "name":"Boolflix",
+            "desc":"decription",
+            "prev":"./previews/boolflix.png",
+            "link": "https://valeriogc.github.io/vue-boolflix"
+        },
+        {
+            "name":"Boolzapp",
+            "desc":"decription",
+            "prev":"./previews/vue-boolzapp.png",
+            "link":"https://valeriogc.github.io/vue-boolzapp"
+        },
+        {
+            "name":"Playstation",
+            "desc":"decription",
+            "prev":"img",
+            "link": "https://valeriogc.github.io/vue-bolzapp"
+        },
+        {
+            "name":"MaxCoach",
+            "desc":"decription",
+            "prev":"img",
+            "live":"./previews/mc.png",
+            "link": "https://valeriogc.github.io/vue-boolflix"
+        },
+        {
+            "name":"Php-ajax-dischi",
+            "desc":"decription",
+            "prev":"./previews/php-ajax.png",
+            "link":"https://valeriogc.github.io/vue-boolzapp"
+        },
+        {
+            "name":"Spotify",
+            "desc":"decription",
+            "prev":"img",
+            "link": "https://valeriogc.github.io/vue-bolzapp"
+        },
+        {
+            "name":"Boolflix",
+            "desc":"decription",
+            "prev":"./pl.png",
+            "link": "https://valeriogc.github.io/vue-boolflix"
+        },
+        {
+            "name":"vue-dischi",
+            "desc":"decription",
+            "prev":"./previews/vue-dischi.png",
+            "live":"im",
+            "link":"https://valeriogc.github.io/vue-boolzapp"
+        },
+        {
+            "name":"Playstation",
+            "desc":"decription",
+            "prev":"./pl.png",
+            "live":"img",
+            "link": "https://valeriogc.github.io/vue-bolzapp"
+        }
+    ]
+}

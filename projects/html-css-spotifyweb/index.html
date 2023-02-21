@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <!-- Fogli di Stile -->
+        <link rel="stylesheet" href="css/debug.css">
+        <link rel="stylesheet" href="css/common-style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mediaquery.css">
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/hover&animations.css">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <!-- Librerie -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="debug# overflow-y-h">
+        <!--
+            Corpo Pagina 
+        -->        
+        <main class="d-flex overflow-y-h">
+            <!-- 
+                Nav Bar Laterale 
+            -->
+            <aside class="bold overflow-y-h">
+                <div id="nav-app" class="d-flex flex-d-col">
+                    <img class="pad-y-1" id="logo" src="img/logo.svg" alt="Logo Spotify">
+                    <img class="pad-y-1 d-none" id="logo-small" src="img/logos2.svg" alt="Logo Spotify small">
+                    <ul class="list-sty-n">
+                        <li class="pad-y-b-0_5">
+                            <i class="fa-solid fa-house font-s-1_5 v-align-m"></i>
+                            <a class="v-align-m" id="home" href="#">Home</a>
+                        </li>
+                        <li class="pad-y-b-0_5">
+                            <i class="fa-solid fa-magnifying-glass font-s-1_5 v-align-m"></i>
+                            <a class="v-align-m" href="#">Cerca</a>
+                        </li>
+                        <li class="pad-y-b-0_5">
+                            <i class="fa-flip-horizontal fa-solid fa-lines-leaning font-s-1_5 v-align-m"></i>
+                            <a class="v-align-m" href="#">La tua libreria</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 
+                Sezione Playlist 
+                -->
+                <div class="d-flex" id="playlist">
+                    <div class="w-100 ">
+                        <h4 class="pad-y-0_5 uppercase">Playlist</h4>
+                        <div class="pad-y-0_5">
+                            <div>
+                                <i class="fa-solid fa-plus v-align-m"></i>
+                                <h5 class="d-in-block">
+                                    <a class="col-inherit text-dec-n" href="#">Crea Playlist</a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="d-flex flex-d-col list-sty-n overflow-y-a">
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                    Footer Nav-Bar Laterale 
+                -->
+                <div id="foot-side-nav" class="d-in-block">
+                    <div class="v-align-m pad-y-b-0_5">
+                        <img class="icon circle-down v-align-m" src="img/download.svg" alt="Icona Installa App">
+                        <a class="text-dec-n col-inherit" href="#">Installa app</a>
+                    </div>
+                    <hr>
+                    <div class="v-align-m pad-y-t-0_5">
+                        <img class="icon circle-user v-align-m b-rad-50" src="img/profile.svg" alt="Icona profilo utente">
+                        <h4 class="d-in-block">
+                            <a class="text-dec-n col-inherit" href="#">John Doe</a>
+                        </h4>
+                    </div>
+                </div>
+
+            </aside>
+            <!-- 
+                Barra Call-action 
+            -->
+            <div id="call-action" > 
+                <a class="d-in-block text-dec-n uppercase btn bold b-rad-30p" href="#">Effettua  l'upgrade</a>
+            </div>
+            <!-- 
+                Corpo Pagina Principale 
+            -->
+            <div id="main-page" class="w-100 overflow-y-a bold">
+                <div class="margin-y-b-2">
+                    <!-- 
+                        Nav-bar Corpo Pagina 
+                    -->
+                    <ul class="color-hov d-flex just-center flex-wrap al-items-c uppercase list-sty-n">
+                        <li>
+                            <a href="#">in evidenza</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="#">podcast</a>
+                        </li>
+                        <li>
+                            <a href="#">classifiche</a>
+                        </li>
+                        <li>
+                            <a href="#">generi e mood</a>
+                        </li>
+                        <li>
+                            <a href="#">nuove uscite</a>
+                        </li>
+                        <li>
+                            <a href="#">scopri</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                     Prima Sezione 
+                -->
+                <div>
+                    <h1 class="pad-y-1 title-sec">Recently Played</h1>
+                    <div class="d-flex flex-wrap container just-sp-between">
+                        <div class="card t-align-c">
+                            <div class="img-playlist">
+                                <img class="w-100" src="img/metal_lifting.jpg" alt="Immagine Playlist Heavy Metal">
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>
+                            <h3 class="pad-y-1">Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card t-align-c">
+                            <div class="img-playlist">    
+                                <img class="w-100" src="img/stranger.jpeg" alt="Immagine Playlist Stranger Things">
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>                    
+                            <h3 class="pad-y-1">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon & Michael Stain</p>
+                        </div>
+                        <div class="card t-align-c">
+                            <div class="img-playlist">
+                                <img class="w-100" src="img/aquietplace.jpeg" alt="Immagine Playlist A Quiet Place">
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>                            
+                            </div>
+                            <h3 class="pad-y-1">A Quiet Place</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card t-align-c">
+                            <div class="img-playlist">
+                                <img class="w-100" src="img/split.jpeg" alt="Immagine Playlist Split">
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>                
+                            </div>            
+                            <h3 class="pad-y-1">Split</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card t-align-c">  
+                            <div class="img-playlist">
+                                <img class="w-100" src="img/cure.jpeg" alt="Immagine Playlist Cure for wellness">
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>
+                            <h3 class="pad-y-1">A cure for wellness</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card t-align-c">
+                            <div class="img-playlist">   
+                                <img class="w-100" src="img/sinister.jpeg" alt="Immagine Playlist Sinister">
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>
+                            <h3 class="pad-y-1">Sinister</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    Seconda Sezione 
+                -->
+                <div>
+                    <h1 class="pad-y-1 title-sec">Creato per John Doe</h1>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="d-flex al-items-c flex-wrap">
+                        <div class="card t-align-c">
+                            <div class="img-playlist">
+                            <img class="w-100" src="img/radar.jpeg" alt="Immagine Playlist Release Radar">                                
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>
+                            <h3 class="pad-y-1">Release Radar</h3>
+                        </div>
+                        <div class="card t-align-c">
+                            <div class="img-playlist">
+                                <img class="w-100" src="img/mixdaily.jpeg" alt="Immagine Playlist Daily Mix 1">
+                                <div class="overlay h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>
+                            <h3 class="pad-y-1">Daily Mix 1</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    Terza Sezione 
+                -->
+                <div>
+                    <h1 class="pad-y-1 title-sec">Artisti più popolari</h1>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="d-flex al-items-c">
+                        <div class="card t-align-c">
+                            <div class="img-playlist i2">
+                                <img class="w-100 b-rad-50" src="img/youg.jpeg" alt="Immagine Playlist Heavy Metal">
+                                <div class="overlay b-rad-50 h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>
+                            <h3 class="pad-y-1">Lana Del Rey</h3>
+                        </div>
+                        <div class="card t-align-c">
+                            <div class="img-playlist i2">
+                                <img class="w-100 b-rad-50" src="img/einaudi.jpeg" alt="Immagine Playlist Stranger Things">
+                                <div class="overlay b-rad-50 h-100 w-100 d-flex just-center al-items-c">
+                                    <i class="fa-regular fa-circle-play fa-4x col-w"></i>
+                                </div>
+                            </div>
+                            <h3 class="pad-y-1">Ludovico Enaudi</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- 
+            Footer Pagina 
+        -->
+        <footer class="w-100">
+            <div class="d-flex just-sp-between al-items-c h-100">
+                <!--
+                    Parte DX Player
+                 -->
+                <div>
+                    <div class="d-flex al-items-c" id="sx-foot">
+                        <img id="playing-song" class="d-in-block v-alb-rad-50 ign-m" src="img/sinister.jpeg" alt="Playing">
+                        <div class="d-in-block v-align-m pad-x-l-0_5">
+                            <h4 class="col-w">Sinister</h4>
+                            <p class="font-s-0_5 n-b">Brano Nome</p>
+                        </div>
+                        <div class="d-in-block pad-x-0_5">
+                            <a class="text-dec-n col-inherit" href="#"><i class="fa-regular fa-heart pad-x-0_5"></i></a>
+                            <a class="text-dec-n col-inherit" href="#"><i class="fa-regular fa-folder pad-x-0_5"></i></a>
+                       </div>
+                    </div>
+                </div>
+                <!-- 
+                    Parte centrale player
+                 -->
+                <div class="col-w t-align-c" id="player-bar">
+                    <div class="pad-y-t-1 pad-y-b-0_5">
+                        <a class="text-dec-n col-inherit" href="#">
+                            <i class="fa-solid fa-shuffle font-s-1_5 pad-x-0_5"></i>
+                        </a>
+                        <a class="text-dec-n col-inherit" href="#">
+                            <i class="fa-solid fa-backward-step font-s-1_5 pad-x-0_5"></i>
+                        </a>
+                        <a class="text-dec-n col-inherit" href="#">
+                            <i class="fa-regular fa-circle-play font-s-2_5 pad-x-1"></i>
+                        </a>
+                        <a class="text-dec-n col-inherit" href="#">
+                            <i class="fa-solid fa-forward-step font-s-1_5 pad-x-0_5"></i>
+                        </a>
+                        <a class="text-dec-n col-inherit" href="#">
+                            <i class="fa-solid fa-rotate-right font-s-1_5 pad-x-0_5"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex al-items-c just-sp-between pad-y-t-0_5">
+                        <p>0:25</p>
+                        <div class="play-b pb2_2 b-rad-30p">
+                            <div class="play-b-bkg h-100 b-rad-30p"></div>
+                            <svg class="pointer-bar d-none b-rad-50" height="1rem" width="1rem"></svg>
+                        </div>
+                        <p>4:35</p>
+                    </div>
+                </div>  
+                <!--
+                    Parte SX Player 
+                -->
+                <div class="d-flex al-items-c just-sp-between w-100" id="dx-foot">
+                    <a class="text-dec-n col-inherit pad-y-0_5" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                    <a class="text-dec-n col-inherit pad-y-0_5" href="#"><i class="fa-solid fa-display"></i></a>
+                    <a class="text-dec-n col-inherit pad-y-0_5" href="#"><i class="fa-solid fa-volume-high"></i></a>
+                    <div class="play-b pb2 b-rad-30p">
+                        <div class="play-b-bkg h-100 b-rad-30p"></div>
+                        <svg class="pointer-bar d-none b-rad-50" height="1rem" width="1rem"></svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

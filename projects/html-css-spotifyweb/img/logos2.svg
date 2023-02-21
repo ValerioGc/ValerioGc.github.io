@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 341 340"
+   class="spotify-logo--text"
+   version="1.1"
+   id="svg130"
+   sodipodi:docname="logos.svg"
+   width="341"
+   height="340"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs134" />
+  <sodipodi:namedview
+     id="namedview132"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.2037037"
+     inkscape:cx="131.67692"
+     inkscape:cy="104.26154"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="1072"
+     inkscape:window-y="375"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg130" />
+  <title
+     id="title126">Spotify</title>
+  <path
+     id="path128"
+     style="fill:#32cd32;fill-opacity:1"
+     d="m 170.4,2.4923077 c -91.999537,0 -168.0000009,75.0004593 -168.0000009,167.0000023 0,91.99955 76.0004639,168 168.0000009,168 91.99955,0 168,-76.00045 168,-168 C 338.4,77.492767 262.39955,2.4923077 170.4,2.4923077 Z M 144.90586,90.787229 C 194.056,90.523557 247.6502,100.36741 286.4,123.49231 c 16.9999,8.99995 0.9999,36.99995 -17,27 -53.99975,-31.99985 -144.00025,-34.9999 -194.999997,-19 -16.99991,5.99995 -27.9999,-23.00005 -9,-30 22.12489,-6.749968 50.015767,-10.546878 79.505857,-10.705081 z m -9.3457,57.619141 c 45.46874,-1.04199 92.09004,10.08604 127.83984,32.08594 13.99995,8.99995 -5e-5,30.99995 -14,22 -44.99979,-27.99985 -114.00025,-35.9999 -166.999997,-20 -16.99991,5 -22.99992,-21 -7,-25 19.0624,-5.62495 39.492527,-8.61231 60.160157,-9.08594 z m 13.62109,54.38672 c 35.3123,0.76172 66.7189,9.82432 94.21875,26.69922 10.99995,6.99995 -5e-5,23.99995 -11,18 -38.9998,-23.9999 -89.0003,-29.99995 -146.999997,-17 -13.99993,2 -15.99994,-18 -4,-20 23.999897,-5.62495 46.593847,-8.15625 67.781247,-7.69922 z" />
+  <metadata
+     id="metadata2479">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Spotify</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

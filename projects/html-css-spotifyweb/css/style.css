@@ -1,0 +1,199 @@
+/* 
+    Scrollbar pagina 
+*/
+::-webkit-scrollbar {
+    width: var(--dim-rem-1);
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+/*
+    Regole pagina
+*/
+main {
+    height: 87.5vh;
+}
+ul li a {
+    text-decoration: none;
+}
+ul li a {
+    line-height: var(--dim-rem-2);
+} 
+#playlist ul li a {
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+} 
+.btn {
+    float: right;
+    border: 1px solid var(--secondary-color);
+    margin: 1.8rem 0.2rem;
+    padding: var(--dim-rem-0_5) var(--dim-rem-2);
+}
+/* 
+    Regole Aside 
+*/
+aside {
+    width: 15rem;
+    flex-shrink: 0;
+}
+aside > div:first-child {
+    margin-bottom: var(--dim-rem-0_5);
+}
+#playlist,
+#foot-side-nav {
+    margin-left: var(--dim-rem-1_5);
+}
+aside h5 {
+    font-size: var(--dim-rem-1);
+}
+#nav-app ul li {
+    padding-left: 1.3rem;
+    border-left: 2px solid;
+    border-color: var(--primary-color);
+}
+#logo {
+    width: 70%;
+    padding-left: 1rem;
+}
+#logo-small {
+    width: 3rem;
+}
+#playlist {
+    height: calc(100% - 18.2rem);
+    width: calc(100% - var(--dim-rem-1_5));
+}
+#playlist ul {
+    height: calc(100% - 4rem);
+}
+.circle-down,
+.fa-magnifying-glass,
+.fa-house {
+    padding-right: var(--dim-rem-0_3);
+}
+.fa-lines-leaning {
+    padding-left: var(--dim-rem-0_3);
+}
+#foot-side-nav div:first-child a {
+    font-size: 0.8rem;
+}
+#foot-side-nav {
+    height: 4.5rem;
+    width: 85%;
+}
+aside hr {
+    width: 12rem;
+    border: 0.5px solid var(--secondary-color);
+}
+.fa-plus {
+    padding: var(--dim-rem-0_5);
+    font-size: 1.3rem;
+    margin-right: var(--dim-rem-0_3);
+}
+.icon {
+    width: var(--dim-rem-1_5);
+    height: var(--dim-rem-1_5);
+    margin-right: var(--dim-rem-0_3);
+}
+/* 
+    Regole main-page
+ */
+#call-action {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 15rem);
+    height: 6rem;
+    z-index: 9;
+}
+#call-action a {
+    margin-right: var(--dim-rem-1);
+}
+#main-page {
+    padding-top: 8rem;
+    padding-left: var(--dim-rem-1_5);
+    padding-right: var(--dim-rem-1_5);
+}
+#main-page hr {
+    border: 1px solid var(--overlay-animation-color);
+    width: 40%;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+#main-page ul li {
+    display: inline-block;
+    padding: 0 var(--dim-rem-1);
+}
+.card {
+    margin: var(--dim-rem-1_5) var(--dim-rem-0_5);
+    width: calc(100% / 6 - 1rem);
+}
+#main-page .img-playlist > img {
+    display: block;
+}
+.img-playlist,
+.play-b {
+    cursor: pointer;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/* 
+    Player-Bar Footer 
+*/
+footer #player-bar {
+    flex-basis: 40%;
+}
+footer > div > div:first-child,
+footer > div > div:last-child {
+    flex-basis: 15%;
+}
+footer {
+    min-height: 13vh;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+}
+#playing-song {
+    position: sticky;
+    width: 3rem;
+    margin-left: var(--dim-rem-1);
+}
+footer #player-bar div:last-child {
+    padding-bottom: var(--dim-rem-0_3);
+}
+#player-bar div p {
+    padding: 0 0.2rem 0.2rem;
+}
+.fa-volume-high,
+.fa-display,
+.fa-list-ul {
+    padding-right: var(--dim-rem-0_3);
+}
+/* 
+    Player-Bar Progression Bar 
+*/
+.play-b-bkg {
+    width: 25%;
+    height: 0.4rem;
+}
+.img-playlist,
+.pb2,
+.pb2_2 {
+    position: relative;
+}
+.pb2 {
+    width: 6rem;
+    margin-right: var(--dim-rem-1);
+}
+.pb2_2 {
+    width: 80%;
+}
+svg.pointer-bar {
+    position: absolute;
+    top: -70%;
+    left: 22%;
+}

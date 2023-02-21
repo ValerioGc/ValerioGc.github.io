@@ -1,0 +1,234 @@
+/* Box&Text-Shadow */
+header {
+    box-shadow: 2px 2px 7px var(--my-grey);
+}
+#listing img,
+.btn:not(.btn-dark),
+.img-sale,
+.social-img {
+    box-shadow: 3px 4px 10px var(--bs-black);
+}
+.btn-dark {
+    box-shadow: 2px 2px 6px var(--bs-black);
+}
+.btn {
+    border: 2px solid transparent !important;
+}
+.img-game {
+    box-shadow: 0 0 7px 1px var(--bs-white);
+}
+h1,
+h2 {
+    text-shadow: 1px 2px 3px var(--my-grey);
+}
+/* Bordi elementi attivi */
+#listing .my_border,
+#listing .my_border-2 {
+    border: 2px solid;
+}
+#accessori .my_border-b,
+#accessori .active-s2 {
+    border-bottom: 3px solid;
+}
+/* Colori Bordi */
+#listing .my_border {
+    border-color: var(--my-blue) !important;
+}
+#listing .my_border-2 {
+    border-color: var(--bs-white) !important;
+}
+#accessori .active-s2 {
+    border-color: var(--my-blue) !important;
+}
+#accessori .my_border-b {
+    border-color: var(--bs-white) !important;
+}
+/******************** 
+**** Effetti Hover **
+********************/
+/* Effetti Hover Bottoni */
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear 0.1s;
+    border-color: var(--bs-white)!important;
+    box-shadow: 0px 0px 7px 5px var(--bs-black);
+}
+.btn-danger:hover,
+.btn-light:hover,
+.btn-primary:hover {
+    border-color: var(--bs-black)!important;
+}
+.btn-danger:hover {
+    box-shadow: 0px 0px 7px 1px var(--bs-white)!important;
+}
+.btn-light:hover,
+.btn-primary:hover {
+    box-shadow: 0px 0px 7px 1px var(--bs-dark)!important;
+}
+/* Hover Nav bar */
+nav ul li a:active .fa-angle-down,
+nav ul li a:focus .fa-angle-down {
+    transform: rotate(180deg) scale(1.2);
+    color: var(--my-blue) !important;
+    font-weight: bold;
+}
+img[src*="img/lens.svg"]:hover {
+    transform: scale(1.3);
+    filter: invert(13%) sepia(82%) saturate(3671%) hue-rotate(207deg) brightness(97%) contrast(101%);
+    transition: all 0.1s linear 0.1s;
+}
+.he:hover {
+    text-decoration: underline;
+}
+.social-img:hover {
+    transform: scale(1.3);
+    border-radius: 25%;
+    filter: brightness(80%) blur(1px);
+    /* Transition */
+    transition-timing-function: linear;
+    transition: transform 2s, border-radius 2s, filter 1s;
+}
+/* Effetti Sezione Hero */
+#listing > div > div:hover .my_border-2,
+#listing > div > div:hover .my_border {
+    transition: all 0.1s linear 0.1s;
+    transform: translateY(-15%);
+    filter: sepia(70%) grayscale(20%);
+    border: 2px solid var(--my-blue) !important;
+}
+/* Hover sezione Accessori */
+#accessori .my_border-b:hover {
+    transition: all 0.1s linear 0.1s;
+    border-bottom: 3px solid var(--my-blue)!important;
+}
+#accessori .my_border-b:hover img {
+    opacity: 1!important;
+}
+.img-game:hover {
+    filter: blur(2px) brightness(80%);
+}
+/************************************
+**** Animazione Heartbeat Loghi *****
+************************************/
+img[alt*="Immagine Returnal"],
+img[alt*="Logo It takes two"],
+img[alt*="Logo PS Now"],
+img[alt*="Logo PS+"] {
+    animation: heartbeat 1.22s ease-in-out infinite;
+}
+@-webkit-keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+    17% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+    to {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+/*********************************
+**** Animazione Bounce Titoli ****
+*********************************/
+h1:hover,
+h2:hover {
+    animation: bounce-right 0.4s;
+}
+@-webkit-keyframes bounce-right {
+    0% {
+        transform: translateX(48px);
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(26px);
+    }
+    65% {
+        transform: translateX(13px);
+    }
+    82% {
+        transform: translateX(6.5px);
+    }
+    93% {
+        transform: translateX(4px);
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    100% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+    }
+}
+/******************************************
+**** Animazione Jello Y - Img Vendita *****
+******************************************/
+.img-sale:hover {
+    animation: jello-vertical 0.9s both;
+}
+@-webkit-keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+/***********************************
+**** Animazione Jello X Bottoni ****
+***********************************/
+.btn:hover {
+    animation: jello-horizontal 0.9s both;
+}
+@-webkit-keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

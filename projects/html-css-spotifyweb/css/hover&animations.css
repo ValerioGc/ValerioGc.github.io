@@ -1,0 +1,135 @@
+/***************************
+****** Effetti Hover *******
+***************************/
+aside h5:hover,
+.fa-magnifying-glass:hover,
+.fa-house:hover,
+.fa-lines-leaning:hover,
+#playlist h4 a:hover,
+#playlist div div i:hover,
+#foot-side-nav div a:hover,
+main ul li a:hover,
+#main-page ul li a:hover,
+#main-page ul li h4:hover,
+.n-b:hover,
+footer .fa-display:hover,
+footer .fa-list-ul:hover,
+footer .fa-volume-high:hover,
+.fa-folder:hover,
+.fa-heart:hover {
+    color: var(--secondary-color);
+    transition: all 0.2s linear 0s;
+    text-shadow: 3px 3px 3px var(--primary-color);
+}
+#call-action a:hover,
+.n-b:hover,
+.play-b:hover svg,
+.play-b:hover .play-b-bkg,
+#player-bar a {
+    transition: all 0.1s linear 0s;
+}
+#call-action a:hover {
+    transform: scale(1.2) translate(-1.2rem, 0);
+}
+.n-b:hover {
+    text-decoration: underline;
+}
+.play-b:hover .play-b-bkg {
+    background-color: var(--overlay-animation-color);
+}
+.play-b:hover svg {
+    display: inline-block;
+}
+#sx-foot div a i:hover,
+#player-bar a:hover i,
+#dx-foot a i:hover {
+    transform: scale(1.2);
+}
+/* Overlay Immagini */
+.img-playlist:hover .overlay {
+    display: flex;
+    transition: all 0.2s linear 0.1s;
+}
+/***************************
+******** Animations ********
+***************************/
+/* 
+    Animazione player bar avanzamento 
+*/
+#player-bar div.play-b-bkg {
+    animation: player-bar-running 30s linear;
+}
+#player-bar svg {
+    display: inline-block;
+    animation: svg-move 30s linear;
+}
+@keyframes player-bar-running {
+    from {
+        width: 25%;
+        background-color: var(--overlay-animation-color);
+    }
+    to { 
+        width: 100%;
+        background-color: var(--overlay-animation-color);
+    }
+} 
+@keyframes svg-move {
+    from {
+        left: 22%;
+    }
+    70% {
+        background-color: inherit;
+    }
+    to { 
+        background-color: red;
+        left: 99%;
+    }
+} 
+/* 
+    Animazione copertina album in riproduzione  
+*/
+#playing-song {
+    animation: img-rotate 5s ease-in-out 6;
+}
+@keyframes img-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.3);
+        filter: grayscale(1) sepia(2) saturate(1);
+    }
+    to { 
+        transform: rotate(0deg) scale(1);
+    }
+} 
+/*
+    Animazione colore sfondo 
+*/
+#main-page {
+    animation: bg-scale 12s ease-in-out infinite;
+    background: linear-gradient(109deg, var(--primary-color-light), var(--primary-color-light), var(--grey-color), var(--primary-color), var(--grey-color), var(--primary-color-light));
+    background-size: 800% 800%;
+}
+@keyframes bg-scale {
+    0% {
+        background-position: 0% 25%;
+    }
+    50% {
+        background-position: 100% 75%;
+    }
+    100% {
+        background-position: 0% 25%;
+    }
+}
+/* 
+    Animazione Bottone Play 
+*/
+.fa-circle-play {
+    animation: play-rotate 5s ease-in-out 6;
+}
+@keyframes play-rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}

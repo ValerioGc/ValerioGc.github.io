@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Fonts */
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../resources/font/Segoe UI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../resources/font/Segoe UI Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../resources/font/Segoe UI Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('../resources/font/UI Bold Italic.woff') format('woff');
+}
+/* Classi Comuni */
+.d-flex {
+    display: flex;
+}
+.override-MQ {
+    display: block!important;
+}
+.d-none {
+    display: none!important;
+}
+.align-center {
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-al_c-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-in-block {
+    display: inline-block;
+}
+.no-border {
+    border: 0;
+}
+/* Misure */
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+/* Corpo Pagina */
+body {
+    height: 100vh;
+    position: relative;
+    font-family: 'Segoe UI Regular';
+}
+i,
+li {
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px -2px #000;
+    margin: 5px 5px 5px 0;
+}
+/* Background  */
+#bg-bar {
+    height: 15vh;
+}
+#bg {
+    height: 85vh;
+}
+/******* Container App *******/
+#container-app {
+    width: 80%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:  0 0 5px -2px var(--primary-color);
+}
+/********** Aside ***********/
+aside {
+    width: 40%;
+    flex-direction: column;
+    border-right: 1px solid var(--primary-icon-color);
+    z-index: 5;
+}
+aside p {
+    font-size: 0.8rem;
+}
+/* Sezione Notifica  */
+#notification-alert-section  {
+    height: 60px;
+}
+#notification-alert-section i {
+    padding: 7px;
+    border-radius: 50%;
+}
+#notification-alert-section span {
+    padding: 0 15px;
+}
+#notification-alert-section a {
+    transition: all 0.3s linear;
+}
+/* Sezione utente */
+#user {
+    height: 50px;
+    padding: 15px;
+}
+#user:first-child{
+    line-height: 45px;
+}
+#user img {
+    vertical-align: middle;
+}
+#user i {
+    display: inline-block;
+    padding: 0 5px;
+}
+/* Search-bar*/
+#search-bar-container {
+    height: 35px;
+    border-bottom: 0.5px solid var(--primary-icon-color);
+}
+#search-bar {
+    width: 96%;
+    padding: 3px 0;
+}
+#search-bar input {
+    border: 0;
+}
+#search-bar i {
+    padding: 2.5px 20px;
+}
+.noCntAlert {
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 1.3rem;
+}
+/* Sezione Contatti */
+#wrapper-contacts {
+    height: calc(100% - 128px);
+    overflow-y: auto;
+}
+.date {
+    align-self: flex-start;
+    font-size: 0.7rem;
+}
+.contact {
+    padding: 10px 15px;
+    border-bottom: 0.1px solid var(--primary-icon-color);
+    list-style-type: none;
+}
+.contact-info {
+    flex-basis: 60%;
+}
+/********* Sezione Chat *********/
+#message-app {
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+#message-app-chat ul {
+    flex-direction: column;
+    justify-content: space-between;
+}
+#app-header,
+#message-app footer {
+    height: 50px;
+}
+/* Header chat */
+#app-header {
+    position: sticky;
+    padding: 15px;
+}
+#app-header img {
+    margin: 0 15px;
+}
+#app-header i,
+#app-footer i {
+    padding: 0 5px;
+}
+/* Sezione Chat */
+#message-app-chat {
+    height: calc(100% - 100px);
+    padding: 10px 60px;
+    background-image: url('../resources/img/mine.jpg');
+    flex-direction: column;
+    overflow-y: auto;
+}
+.dark-mode-bg {
+    background-image: url('../resources/img/dark.jpg') !important;
+}
+.placeholderChatEmpty {
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 40px;
+    background-color: #a09f9366;
+    border-radius: 10px;
+    display: inline-block;
+}
+/* Messaggi */
+.message {
+    width: 55%;
+    margin: 15px 0px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+.message .date {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    margin: 1px 5px;
+}
+.text-message {
+    margin-right: 40px;
+}
+.sent {
+    align-self: flex-end;
+}
+.received {
+    align-self: flex-start;
+}
+/* Footer chat */
+#app-footer {
+    justify-content: space-around;
+}
+#app-footer input {
+    width: 80%;
+    height: 65%;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+#send-message-btn {
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 5px -1px var(--primary-color);
+    animation: enter-btn 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* Messaggio criptaggio chat */
+.crypt-Message {
+    background-color: #fff5c2;
+    text-align: center;
+    box-shadow: 0 0 5px -1px var(--primary-color);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 5px;
+    color: var(--secondary-icon-color);
+}
+.crypt-Message-text {
+    margin: 15px 20px;
+    display: inline-block;
+}
+.crypt-Message-text a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 2px;
+}
+/* Popup */
+.popup-message {
+    padding: 10px 5px;
+    top: 3px;
+    right: 2px;
+    border-radius: 10px;
+}
+.popup {
+    background-color: #ffffffdc;
+    border: 0.5px solid #adadad;
+    color: var(--primary-color)!important;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.popup-chat {
+    padding: 30px 45px;
+    top: 38px;
+    right: 18px;
+}

@@ -1,0 +1,19 @@
+/* Regole debug  */
+.debug * {
+    border: 0.5px dotted black;
+}
+/* Regole debug colori */
+.debug main {
+    background-color: blue;
+} 
+.debug aside {
+    background-color: rgb(255, 0, 0);
+} 
+.debug #main-page {
+    background-color: rgb(47, 255, 0);
+    overflow-y: scroll;
+    width: 100%;
+} 
+.debug footer {
+    background-color: rgb(229, 255, 0);
+}

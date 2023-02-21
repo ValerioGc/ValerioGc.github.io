@@ -7,18 +7,42 @@
         <title>Projects Preview</title>
         <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
         <!-- StyleSheet -->
-        <!-- <link rel="stylesheet" href="css/debug.css"> -->
-        <link rel="stylesheet" href="css/colors.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/effects.css">
-        <link rel="stylesheet" href="css/mediaquery.css">
-        <!-- Icone -->
-        <!-- Luxon -->
+        <link rel="stylesheet" href="landing-page/css/style.css">
     </head>
-    <body class="debug">
-    <!-- Sfondo -->
-      Vedi pagine
-        <a href="https://valeriogc.github.io/vue-bolzapp-master">Bolzapp</a>
-        <a href="https://valeriogc.github.io/htmlcss-playstation-master">Playstation</a>
+    <body>
+        <div id="app">
+
+            <header>
+                <img src="./jumb.png" alt="banner" />
+                <h1>Projects live previews</h1>
+            </header>
+
+            <main>
+                <ul>
+                    <li v-for="(project, index) in prj_db" :key="index" class="project-card">
+                        <div class="main-section">
+                            <img :src="project.prev" :alt="`Preview ${project.name}`" />
+                            <h3>{{project.name}}</h3>
+                        </div>
+                        <div class="buttons-section">
+                            <a class="btn" :href="project.link">Codice</a>
+                            <a class="btn" :href="project.live">Preview</a>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+
+            <footer>
+                <p>
+                    <span v-text=" '&copy;' + new Date().getFullYear()"></span>
+                     - Valerio genco
+                </p>
+            </footer>
+
+        </div>
+        <!-- Script -->
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+        <script src="./main.js"></script>
     </body>
 </html>

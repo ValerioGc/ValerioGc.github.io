@@ -1,0 +1,172 @@
+/*****************************
+***MediaQuery Max-992px(MD)***
+*****************************/
+@media screen and (max-width: 992px) {
+    .container {
+        justify-content: flex-start;
+    }
+    .card {
+        margin: var(--dim-rem-1) var(--dim-rem-0_5);
+        width: calc(100% / 4 - var(--dim-rem-1));
+    }
+    #main-page h3, 
+    #main-page p {
+        font-size: smaller;
+    }
+    #player-bar a i {
+        padding: 0 0.4rem;
+    }
+}
+/*****************************
+***MediaQuery Max-768px(S)****
+*****************************/
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% / 2 - var(--dim-rem-1));
+    }
+    #main-page h3 {
+        font-size: large;
+    }
+    #main-page p {
+        font-size: initial;
+    }
+    #player-bar a i {
+        padding: 0 var(--dim-rem-0_3);
+    }
+}
+/*****************************
+***MediaQuery Max-576px(XS)***
+*****************************/
+@media screen and (max-width: 576px) {
+    aside ul li a, 
+    #playlist h4, 
+    #playlist i.fa-plus,
+    #logo,
+    #playlist h5, 
+    #foot-side-nav h4 a,
+    #foot-side-nav h5 a,
+    #foot-side-nav hr,
+    #foot-side-nav div a {
+        display: none!important;
+    }
+    aside {
+        width: 4rem!important;
+    }
+    #nav-app ul li, 
+    #logo-small {
+        border: 0!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+        padding-bottom: var(--dim-rem-1);
+    }
+    .fa-lines-leaning {
+        padding-right: 0.4rem;
+    }
+    #nav-app,
+    #foot-side-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    #foot-side-nav p {
+        margin-right: var(--dim-rem-0_3);
+    }
+    #logo-small {
+        display: inline-block;
+    }
+    #call-action {
+        width: calc(100% - 4rem);
+    }
+    .btn {
+        padding: 0.4rem var(--dim-rem-1);
+    }
+    #playing-song {
+        width: var(--dim-rem-2);
+    }
+    #player-bar a i {
+        padding: 0 0.15rem;
+        font-size: 1.4rem;
+    }
+    #player-bar .fa-circle-play {
+        font-size: 1.9rem !important;
+    }
+    .fa-volume-high,
+    .fa-display,
+    .fa-list-ul {
+        padding-right: 0.2rem;
+    }
+    .icon {
+        margin-right: 0;
+    }
+}
+/******************************
+** MediaQuery Max-491px(XXS) **
+******************************/
+@media screen and (max-width: 491px) {
+    #call-action,
+    .fa-heart,
+    .fa-folder,
+    #playing-song,
+    #dx-foot .play-b {
+        display: none !important;
+    }
+    #main-page {
+        padding-top: var(--dim-rem-2);
+    }
+    .card {
+        width: calc(100% - var(--dim-rem-1));
+    }
+    #player-bar a i{
+        font-size: 1.3rem;
+    }
+    #player-bar .fa-circle-play {
+        font-size: 1.8rem!important;
+    }
+    footer #player-bar {
+        flex-basis: 50%;
+    }
+    #dx-foot {
+        flex-wrap: wrap;
+    }
+}
+/*******************************
+** MediaQuery Max-300px(3XS) **
+*******************************/
+@media screen and (max-width: 300px) {
+    #dx-foot {
+        display: none;
+    }
+    footer #player-bar {
+        flex-basis: 100%;
+    }
+    #player-bar a i {
+        padding: 0;
+    }
+}
+/*******************************************************
+***** Allineamento verticale sezione utente aside ******
+*******************************************************/
+@media screen and (max-height: 649px) {
+    #playlist {
+        height: calc(100% - 19rem);
+    }
+}
+@media screen and (max-height: 530px) {
+    #playlist {
+        height: calc(100% - 19.5rem);
+    }
+}
+@media screen and (max-height: 450px) {
+    #playlist {
+        height: calc(100% - 20rem);
+    }
+}
+@media screen and (max-height: 310px) {
+    #call-action {
+        display: none;
+    }
+    #main-page {
+        padding-top: 1rem;
+    }
+}
